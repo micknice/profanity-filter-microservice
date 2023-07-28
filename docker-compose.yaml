@@ -1,0 +1,13 @@
+version: "3"
+services:
+  pfilter-app:
+    build: .
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./:/profanity-filter-microservice
+      - /profanity-filter-microservice/node_modules
+    environment:
+      - PORT=9090
+    # env_file:
+    #   - ./.env
