@@ -2824,5 +2824,6 @@ const words = [
   "zoophilia",
   "🖕"
 ]
+console.log(words.length)
 
 module.exports = words;

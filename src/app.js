@@ -7,7 +7,7 @@ app.use(cors())
 app.use(express.json())
 
 
-app.get('/api/profanity', getProfanityCheck)
+app.post('/api/profanity', getProfanityCheck)
 
 app.use('/*', (req, res)=> {
     res.status(404).send({msg: 'not found'});
